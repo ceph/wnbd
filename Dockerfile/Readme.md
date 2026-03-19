@@ -34,7 +34,7 @@ Clone and build WNBD via VS 2019 command prompt
 Run the following commands in the container interactive shell.
 
 ```PowerShell
-git clone https://github.com/cloudbase/wnbd
+git clone https://github.com/ceph/wnbd
 msbuild wnbd\vstudio\wnbd.sln
 copy wnbd\vstudio\x64\Debug\driver\* .
 copy wnbd\vstudio\x64\Debug\wnbd-client.exe .

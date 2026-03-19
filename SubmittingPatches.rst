@@ -158,8 +158,8 @@ PR best practices
 -----------------
 
 PRs should be opened on branches contained in your fork of
-https://github.com/cloudbase/wnbd.git - do not push branches directly to
-``cloudbase/wnbd.git``.
+https://github.com/ceph/wnbd.git - do not push branches directly to
+``ceph/wnbd.git``.
 
 PRs should target "main".
 

@@ -76,7 +76,7 @@ The following snippet builds the WNBD project and copies the generated binaries 
 proceeding to install the driver placed in the same directory.
 
 ```PowerShell
-git clone https://github.com/cloudbase/wnbd
+git clone https://github.com/ceph/wnbd
 msbuild wnbd\vstudio\wnbd.sln
 # The following binaries can be archived and copied to a destination
 # host. Use "reinstall.ps1" to install or reinstall the driver.
@@ -86,7 +86,7 @@ copy wnbd\vstudio\x64\Debug\libwnbd.dll $outDir
 copy wnbd\vstudio\reinstall.ps1 $outDir
 ```
 
-[This project](https://github.com/cloudbase/ceph-windows-installer) allows building
+[This project](https://github.com/ceph/ceph-windows-installer) allows building
 an MSI installer that bundles WNBD and the Ceph Windows clients.
 
 How to install
@@ -95,7 +95,7 @@ How to install
 ### MSI installer
 
 The Ceph MSI installer bundles a signed version of the WNBD driver. It can be
-downloaded from here: https://cloudbase.it/ceph-for-windows/
+downloaded from releases page: https://github.com/ceph/wnbd/releases
 
 If however you're interested in the manual install procedure, check the following
 sections.
@@ -533,3 +533,6 @@ Worth mentioning that by default, Storport limits the number of pending IO reque
 
 Be aware that the IO timers such as ``TimeSinceLastReceivedReqMs`` have a ~15ms
 accuracy and are mostly intended for timeout detection.
+
+## Source
+This is a fork of https://github.com/cloudbase/wnbd
